@@ -6,7 +6,7 @@ Supports crawling on US, GB, FR and DE recipe archives that are publicly availab
 
 ### Features
 
-- **Multi-Language Support:** HelloFreshCrawler now supports recipes in English (GB), English (US), and German (DE).
+- **Multi-Language Support:** HelloFreshCrawler now supports recipes in English (GB), English (US), French (FR) and German (DE).
 
 - **Automatic Retries:** It attempts to download all recipes it finds with 3 retries, handling connection timeouts and other issues gracefully.
 
