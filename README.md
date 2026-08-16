@@ -6,9 +6,9 @@ Supports crawling on US, GB, FR and DE recipe archives that are publicly availab
 
 ### Features
 
-- **Multi-Language Support:** HelloFreshCrawler now supports recipes in English (GB), English (US), French (FR) and German (DE).
+- **Multi-Language Support:** Crawls recipe archives in English (US), English (GB), French (FR) and German (DE).
 
-- **Automatic Retries:** It attempts to download all recipes it finds with 3 retries, handling connection timeouts and other issues gracefully.
+- **Automatic Retries:** Downloads that fail due to transient network errors (e.g. timeouts, connection resets) are retried up to 3 times. Downloads that still fail are reported in a summary when the crawl finishes.
 
 - **Contributors:** 
   - [@alexcodito](https://github.com/alexcodito/) (Author)
@@ -19,6 +19,13 @@ Supports crawling on US, GB, FR and DE recipe archives that are publicly availab
 `node index.js HelloFresh -l GB -s ./downloads`
 
 The above will download every PDF recipe card from the specified country's archive into the specified local directory.
+
+| Option | Alias | Description | Default |
+| --- | --- | --- | --- |
+| `--locale` | `-l` | Locale to crawl on. One of `US`, `GB`, `DE`, `FR`. | `US` |
+| `--recipeCardSaveDirectory` | `-s` | Directory where to save the downloaded PDF recipe cards. | `./recipe-card-pdfs` |
+| `--maxPrepTime` | `-m` | Maximum recipe prep time in minutes. No limit applied if omitted. | No limit |
+| `--product` | `-p` | Pipe-separated list of product types to include (e.g. `classic-box\|veggie-box\|family-box`). | `classic-box\|veggie-box\|family-box` |
 
 <img src="https://github.com/alexcodito/HelloFreshCrawler/blob/master/hello-fresh-crawler.gif" width="886" alt="HelloFresh Crawler Demo"/>
 
