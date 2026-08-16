@@ -3,3 +3,7 @@ node_modules/
 build/
 logs/
 .eslintrc
+
+# Downloaded PDFs
+recipe-card-pdfs/
+downloads/
