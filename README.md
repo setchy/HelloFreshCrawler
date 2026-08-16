@@ -2,7 +2,7 @@
 
 Recipe crawler for the popular HelloFresh meal-kit provider.
 
-Supports crawling on US, GB and DE recipe archives that are publically available on www.hellofresh.com.
+Supports crawling on US, GB and DE recipe archives that are publicly available on www.hellofresh.com.
 
 ### Features
 
