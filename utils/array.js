@@ -1,4 +1,4 @@
-// Spit array into chuncks of specified size
+// Spit array into chunks of specified size
 const splitArrayBatch = function (arr, chunkSize) {
     var R = [];
     for (var i=0,len=arr.length; i<len; i+=chunkSize)
